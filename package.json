@@ -2,12 +2,12 @@
   "name": "playwright-sample-test",
   "version": "1.0.0",
   "description": "Sample tests using Playwright framework",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "test": "test"
+    "test": "npx playwright test --headed"
   },
   "author": "Arek Adamczyk",
-  "license": "ISC",
+  "license": "",
   "devDependencies": {
     "@playwright/test": "^1.35.1",
     "eslint": "^8.44.0",
