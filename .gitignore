@@ -136,3 +136,4 @@ dist
 tests-examples/
 
 # playwright auth data
+playwright/.auth/user.json

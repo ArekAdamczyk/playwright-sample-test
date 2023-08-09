@@ -10,7 +10,7 @@ class BasePage {
     this.menuLogoutLink = page.getByText('Logout');
     this.menuResetAppStateLink = page.getByText('Reset App State');
     this.cartLink = page.locator('span[class=shopping_cart_link]');
-    this.carBadge = page.locator('a[class=shopping_cart_badge]');
+    this.cartBadge = page.locator('span[class=shopping_cart_badge]');
   }
 
   async openBurgerMenu() {
@@ -19,6 +19,14 @@ class BasePage {
 
   async closeBurgerMenu() {
     await this.closeMenuButton.click();
+  }
+
+  async getCartBadgeText() {
+    return this.cartBadge.innerText();
+  }
+
+  async clickCartLink() {
+    await this.cartBadge.click();
   }
 }
 

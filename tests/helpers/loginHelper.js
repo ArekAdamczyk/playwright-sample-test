@@ -1,10 +1,10 @@
 'use strict';
 
-const swagLabsPages = require('../pages/index');
+const {LoginPage} = require('../pages/index');
 
 class LoginHelper {
   constructor(page) {
-    this.loginPage = new swagLabsPages.LoginPage(page);
+    this.loginPage = new LoginPage(page);
   }
 
   async login(name, password) {
